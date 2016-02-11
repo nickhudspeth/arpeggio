@@ -1,0 +1,13 @@
+arpeggio configuration\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/list.c
+arpeggio configuration\list.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdlib.h
+arpeggio configuration\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+arpeggio configuration\list.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stddef.h
+arpeggio configuration\list.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+arpeggio configuration\list.o: ../Inc/FreeRTOSConfig.h
+arpeggio configuration\list.o: ../Inc/mxconstants.h
+arpeggio configuration\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+arpeggio configuration\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+arpeggio configuration\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+arpeggio configuration\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+arpeggio configuration\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+arpeggio configuration\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h

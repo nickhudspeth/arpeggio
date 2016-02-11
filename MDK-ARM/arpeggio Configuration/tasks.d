@@ -1,0 +1,17 @@
+arpeggio configuration\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c
+arpeggio configuration\tasks.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdlib.h
+arpeggio configuration\tasks.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\string.h
+arpeggio configuration\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+arpeggio configuration\tasks.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stddef.h
+arpeggio configuration\tasks.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+arpeggio configuration\tasks.o: ../Inc/FreeRTOSConfig.h
+arpeggio configuration\tasks.o: ../Inc/mxconstants.h
+arpeggio configuration\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+arpeggio configuration\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+arpeggio configuration\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+arpeggio configuration\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+arpeggio configuration\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+arpeggio configuration\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+arpeggio configuration\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+arpeggio configuration\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+arpeggio configuration\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/StackMacros.h
