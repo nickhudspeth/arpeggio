@@ -1,0 +1,341 @@
+
+/* REGISTER DEFINITIONS */
+
+// Chip I.D. and Revision Register
+#define CS43L22_CIDRR 		0x01
+#define CS43L22_CHIPID4 	7
+#define CS43L22_CHIPID3 	6
+#define CS43L22_CHIPID2 	5
+#define CS43L22_CHIPID1 	4
+#define CS43L22_CHIPID0 	3
+#define CS43L22_REVID2 		2
+#define CS43L22_REFID1		1
+#define CS43L22_REVID0  	0
+
+// Power Control 1 Register
+#define CS43L22_PCTL1		0x02
+#define CS43L22_PDN7		7
+#define CS43L22_PDN6		6
+#define CS43L22_PDN5		5
+#define CS43L22_PDN4		4
+#define CS43L22_PDN3		3
+#define CS43L22_PDN2		2
+#define CS43L22_PDN1		1
+#define CS43L22_PDN0		0
+
+// Power Control 2 Register
+#define CS43L22_PCTL2 		0x04
+#define CS43L22_PDN_HPB1	7
+#define CS43L22_PDN_HPB0	6
+#define CS43L22_PDN_HPA1 	5
+#define CS43L22_PDN_HPA0 	4
+#define CS43L22_PDN_SPKB1	3
+#define CS43L22_PDN_SPKB0	2
+#define	CS43L22_PDN_SPKA1	1
+#define CS43L22_PDN_SPKA0	0
+
+// Clocking Control Register
+#define CS43L22_CLKCTL 		0x05
+#define CS43L22_AUTO		7
+#define CS43L22_SPEED1		6
+#define	CS43L22_SPEED0		5
+#define CS43L22_32K_GROUP	4
+#define CS43L22_VIDEOCLK	3
+#define CS43L22_RATIO1		2
+#define CS43L22_RATIO0		1
+#define CS43L22_MCLKDIV2	0
+
+// Interface Control 1 Register
+#define CS43L22_INTCTL1		0x06
+#define CS43L22_MS			7
+#define CS43L22_INV_SCLK	6
+#define CS43L22_DSP			4
+#define CS43L22_DACDIF1		3
+#define CS43L22_DACDIF0		2
+#define CS43L22_AWL1		1
+#define CS43L22_AWL0		0
+
+// Interface Control 2 Register
+#define CS43L22_INTCTL2		0x07
+#define CS43L22_SCLKEQMCLK	6
+#define CS43L22_INV_SWCH	3
+
+// Passthrough A Select Register
+#define CS43L22_PASSA		0x08
+#define CS43L22_PASSASEL4	3
+#define	CS43L22_PASSASEL3	2
+#define CS43L22_PASSASEL2	1
+#define CS43L22_PASSASEL1	0
+
+// Passthrough B Select Register
+#define CS43L22_PASSB		0x09
+#define CS43L22_PASSBSEL4	3
+#define	CS43L22_PASSBSEL3	2
+#define CS43L22_PASSBSEL2	1
+#define CS43L22_PASSBSEL1	0
+
+// Analog ZC and SR Settings Register
+#define CS43L22_AZCSRS		0x0A
+#define CS43L22_ANLGSFTB	3
+#define CS43L22_ANLGZCB		2
+#define	CS43L22_ANLGSFTA	1
+#define CS43L22_ANLGZCA		0
+
+// Passthrough Gang Control Register
+#define CS43L22_PTGANGCTL	0x0C
+#define CS43L22_PASSBEQA	7
+
+// Playback Control 1 Register
+#define CS43L22_PBCTL		0x0D
+#define CS43L22_HPGAIN2		7
+#define CS43L22_HPGAIN1		6
+#define CS43L22_HPGAIN0		5
+#define CS43L22_PLYBCKBEQA	4
+#define CS43L22_INV_PCMB	3
+#define CS43L22_INC_PCMA	2
+#define CS43L22_MSTBMUTE	1
+#define CS43L22_MSTAMUTE	0
+
+// Miscellaneous Controls Register
+#define CS43L22_MISCTL		0x0E
+#define CS43L22_PASSTHRUB	7
+#define CS43L22_PASSTHRUA	6
+#define CS43L22_PASSBMUTE	5
+#define CS43L22_PASSAMUTE	4
+#define CS43L22_FREEZE		3
+#define CS43L22_DEEMPH		2
+#define CS43L22_DIGSFT		1
+#define CS43L22_DIGZC		0
+
+// Playback Control 2 Register
+#define CS43L22_PBCTL2		0x0F
+#define CS43L22_HPBMUTE		7
+#define CS43L22_HPAMUTE		6
+#define CS43L22_SPKBMUTE	5
+#define CS43L22_SPKAMUTE	4
+#define CS43L22_SPKBEQA		3
+#define CS43L22_SPKSWAP		2
+#define CS43L22_SPKMONO		1
+#define CS43L22_MUTE5050	0
+
+// Passthrough A Volume Register
+#define CS43L22_PASSAVOL	0x14
+#define CS43L22_PASSAVOL7	7
+#define CS43L22_PASSAVOL6	6
+#define CS43L22_PASSAVOL5	5
+#define CS43L22_PASSAVOL4	4
+#define CS43L22_PASSAVOL3	3
+#define CS43L22_PASSAVOL2	2
+#define CS43L22_PASSAVOL1	1
+#define CS43L22_PASSAVOL0	0
+
+// Passthrough B Volume Register
+#define CS43L22_PASSBVOL	0x15
+#define CS43L22_PASSBVOL7	7
+#define CS43L22_PASSBVOL6	6
+#define CS43L22_PASSBVOL5	5
+#define CS43L22_PASSBVOL4	4
+#define CS43L22_PASSBVOL3	3
+#define CS43L22_PASSBVOL2	2
+#define CS43L22_PASSBVOL1	1
+#define CS43L22_PASSBVOL0	0
+
+// PCM A Volume Register
+#define CS43L22_PCMA 		0x1A
+#define CS43L22_PCMAMUTE	7
+#define CS43L22_PCMAVOL6	6
+#define CS43L22_PCMAVOL5	5
+#define CS43L22_PCMAVOL4	4
+#define CS43L22_PCMAVOL3	3
+#define CS43L22_PCMAVOL2	2
+#define CS43L22_PCMAVOL1	1
+#define CS43L22_PCMAVOL0	0
+
+// PCM B Volume Register
+#define CS43L22_PCMB 		0x1B
+#define CS43L22_PCMBMUTE	7
+#define CS43L22_PCMBVOL6	6
+#define CS43L22_PCMBVOL5	5
+#define CS43L22_PCMBVOL4	4
+#define CS43L22_PCMBVOL3	3
+#define CS43L22_PCMBVOL2	2
+#define CS43L22_PCMBVOL1	1
+#define CS43L22_PCMBVOL0	0
+
+// Beep Frequency & On Time Register
+#define CS43L22_BEEPFREQ	0x1C
+#define CS43L22_FREQ3		7
+#define CS43L22_FREQ2		6
+#define CS43L22_FREQ1		5
+#define CS43L22_FREQ0		0
+#define CS43L22_ONTIME3		4
+#define CS43L22_ONTIME2		2
+#define CS43L22_ONTIME1		1
+#define CS43L22_ONTIME0		0
+
+// Beep Volume $ Off Time Register
+#define CS43L22_BEEPVOT		0x1D
+#define CS43L22_OFFTIME2	7
+#define CS43L22_OFFTIME1	6
+#define CS43L22_OFFTIME0	5
+#define CS43L22_BPVOL4		4
+#define CS43L22_BPVOL3		3
+#define CS43L22_BPVOL2		2
+#define CS43L22_BPVOL1		1
+#define CS43L22_BPVOL0		0
+
+// Beep & Tone Configuration Register
+#define CS43L22_BEEPTC		0x1E
+#define	CS43L22_BEEP1		7
+#define CS43L22_BEEP0		6
+#define CS43L22_BEEPMIXDIS	5
+#define CS43L22_TREBCF1		4
+#define CS43L22_TREBCF0		3
+#define CS43L22_BASSCF1		2
+#define CS43L22_BASSCF0		1
+#define CS43L22_TCEN		0
+
+// Tone Control Register
+#define CS43L22_TONECTL		0x1F
+#define CS43L22_TREB3		7
+#define CS43L22_TREB2		6
+#define CS43L22_TREB1 		5
+#define CS43L22_TREB0  		4
+#define CS43L22_BASS3 		3
+#define CS43L22_BASS2 		2
+#define CS43L22_BASS1 		1
+#define CS43L22_BASS0 		0
+
+// Master A Volume Control Register
+#define CS43L22_MSTAVC 		0x20
+#define CS43L22_MSTAVOL7	7
+#define CS43L22_MSTAVOL6	6
+#define CS43L22_MSTAVOL5	5
+#define CS43L22_MSTAVOL4	4
+#define CS43L22_MSTAVOL3	3
+#define CS43L22_MSTAVOL2	2
+#define CS43L22_MSTAVOL1	1
+#define CS43L22_MSTAVOL0	0
+
+// Master B Volume Control Register
+#define CS43L22_MSTBVC 		0x21
+#define CS43L22_MSTBVOL7	7
+#define CS43L22_MSTBVOL6	6
+#define CS43L22_MSTBVOL5	5
+#define CS43L22_MSTBVOL4	4
+#define CS43L22_MSTBVOL3	3
+#define CS43L22_MSTBVOL2	2
+#define CS43L22_MSTBVOL1	1
+#define CS43L22_MSTBVOL0	0
+
+// Headphone A Volume Control Register
+#define CS43L22_HPAVC		0x22
+#define CS43L22_HPAVOL7		7
+#define CS43L22_HPAVOL6		6
+#define CS43L22_HPAVOL5		5
+#define CS43L22_HPAVOL4		4
+#define CS43L22_HPAVOL3		3
+#define CS43L22_HPAVOL2		2
+#define CS43L22_HPAVOL1		1
+#define CS43L22_HPAVOL0		0
+
+// Headphone B Volume Control Register
+#define CS43L22_HPBVC		0x23
+#define CS43L22_HPBVOL7		7
+#define CS43L22_HPBVOL6		6
+#define CS43L22_HPBVOL5		5
+#define CS43L22_HPBVOL4		4
+#define CS43L22_HPBVOL3		3
+#define CS43L22_HPBVOL2		2
+#define CS43L22_HPBVOL1		1
+#define CS43L22_HPBVOL0		0
+
+// Speaker A Volume Control Register
+#define CS43L22_SPKAVC		0x24
+#define CS43L22_SPKAVOL7	7
+#define CS43L22_SPKAVOL6	6
+#define CS43L22_SPKAVOL5	5
+#define CS43L22_SPKAVOL4	4
+#define CS43L22_SPKAVOL3	3
+#define CS43L22_SPKAVOL2	2
+#define CS43L22_SPKAVOL1	1
+#define CS43L22_SPKAVOL0	0
+
+// Speaker B Volume Control Register
+#define CS43L22_SPKBVC		0x25
+#define CS43L22_SPKBVOL7	7
+#define CS43L22_SPKBVOL6	6
+#define CS43L22_SPKBVOL5	5
+#define CS43L22_SPKBVOL4	4
+#define CS43L22_SPKBVOL3	3
+#define CS43L22_SPKBVOL2	2
+#define CS43L22_SPKBVOL1	1
+#define CS43L22_SPKBVOL0	0
+
+// PCM Channel Swap Register
+#define CS43L22_PCMCS	    0x26
+#define CS43L22_PCMASWP1	7
+#define CS43L22_PCMASWP0	6
+#define CS43L22_PCMBSWP1	5
+#define CS43L22_PCMBSWP0	4
+
+// Limiter Control 1, Min/Max Thresholds Register
+#define CS43L22_LIMCTL1		0x27
+#define CS43L22_LMAX2		7
+#define CS43L22_LMAX1		6
+#define CS43L22_LMAX0		5
+#define CS43L22_CUSH2		4
+#define CS43L22_CUSH1		3
+#define CS43L22_CUSH0		2
+#define CS43L22_LIMSRDIS	1
+#define CS43L22_LIMZCDIS	0
+
+// Limiter Control 2, Release Rate Register
+#define CS43L22_LIMCTL2 	0x28
+#define CS43L22_LIMARATE5	5
+#define CS43L22_LIMARATE4	4
+#define CS43L22_LIMARATE3	3
+#define CS43L22_LIMARATE2	2
+#define CS43L22_LIMARATE1	1
+#define CS43L22_LIMARATE0	0
+
+// Status Register (Read-Only)
+#define CS43L22_STATUS		0x2E
+#define CS43L22_SPCLKERR	6
+#define CS43L22_DSPAOVFL	5
+#define CS43L22_DSPBOVFL	4
+#define CS43L22_PCMAOVFL	3
+#define CS43L22_PCMBOVFL	2
+
+// Battery Compensation Register
+#define CS43L22_BATTCOMP	0x2F
+#define CS43L22_BATTCMP 	7
+#define CS43L22_VPMONITOR	6
+#define CS43L22_VPREF3		3
+#define CS43L22_VPREF2		2
+#define CS43L22_VPREF1		1
+#define CS43L22_VPREF0		0
+
+// VP Battery Level Register(Read-Only)
+#define CS43L22_VPBATTLEV	0x30
+#define CS43L22_VPLVL7		7
+#define CS43L22_VPLVL6		6
+#define CS43L22_VPLVL5		5
+#define CS43L22_VPLVL4		4
+#define CS43L22_VPLVL3		3
+#define CS43L22_VPLVL2		2
+#define CS43L22_VPLVL1		1
+#define CS43L22_VPLVL0	
+
+// Speaker Status Register (Read-Only)
+#define CS43L22_SPKRSTAT	0x31
+#define CS43L22_SPKASHRT	5
+#define CS43L22_SPKBSHRT	4
+#define CS43L22_SPKRHPSTAT	3
+
+// Charge Pump Frequency Register
+#define CS43L22_CPFREQ		0x34
+#define CS43L22_CHGFREQ3	7
+#define	CS43L22_CHGFREQ2	6
+#define CS43L22_CHGFREQ1	5
+#define CS43L22_CHGFREQ0	4
