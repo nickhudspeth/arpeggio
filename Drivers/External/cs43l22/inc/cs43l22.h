@@ -45,7 +45,7 @@
 #define CS43L22_RATIO0		1
 #define CS43L22_MCLKDIV2	0
 
-// Interface Control 1 Register
+// Interface Control 1 Registerio[]
 #define CS43L22_INTCTL1		0x06
 #define CS43L22_MS			7
 #define CS43L22_INV_SCLK	6
@@ -325,7 +325,7 @@
 #define CS43L22_VPLVL3		3
 #define CS43L22_VPLVL2		2
 #define CS43L22_VPLVL1		1
-#define CS43L22_VPLVL0	
+#define CS43L22_VPLVL0
 
 // Speaker Status Register (Read-Only)
 #define CS43L22_SPKRSTAT	0x31

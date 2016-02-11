@@ -1,0 +1,3 @@
+[submodule "Middlewares/Third_Party/libMIDI"]
+	path = Middlewares/Third_Party/libMIDI
+	url = https://github.com/nickhudspeth/libMIDI.git
